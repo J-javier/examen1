@@ -37,6 +37,7 @@ class UsuarioController extends Controller
         $usuario->apellido =$request->apellido;
         $usuario->correo =$request->correo;
         $usuario->fecha_registro =$request->fecha_registro;
+        $usuario->save();
         return $usuario;
     }
 

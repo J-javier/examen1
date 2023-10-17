@@ -11,10 +11,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::controller(UsuarioController::class)->group(function(){
     Route::get('/usuarios','index');
-    Route::get('/usuario/{$id}','show');
+    Route::get('/usuario/{id}','show');
     Route::post('/usuario','store');
-    Route::put('/usuario/{$id}','update');
-    Route::delete('/usuario/{$id}','destroy');
+    Route::put('/usuario/{id}','update');
+    Route::delete('/usuario/{id}','destroy');
 }) ;  
 
 
